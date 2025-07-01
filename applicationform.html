@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allication Form</title>
+    <style>
+        body{
+            background-color: bisque;
+
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            text-align:center; 
+            color: blue;
+            font-size:x-large;  
+        }
+        
+        button{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <form action ='/submit' method="post">
+    <label> First Name:</label>
+    <input type=" first name" placeholder="Enter your  first Name" >
+    <label>Last Name:</label>
+    <input type="last name" placeholder="Enter your Last Name"><br><br>
+    <label> Date of Birth:</label>
+    <input type="date" placeholder="mm/dd/yyyy">
+    <label> Age:</label>
+    <input type="age" placeholder="" required><br><br>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+    <option value="">-- Select Gender --</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    </select>
+    <label> Email Address:</label>
+    <input type="email" placeholder="Enter email address"><br><br>
+    <label> positons Available:</label>
+    <input type="radio" id="Junior Developer" value="Junior Developer">
+    <label> Junior Developer</label>
+    <input type="radio" id="Mid-level Developer" value="Mid-level Developer">
+    <label> Mid-level Developer</label>
+    <input type="radio" id="senior Developer" value="senior Developer">
+    <label> senior Developer</label><br><br>
+    <label> Programming Languages:</label>
+    <input type="checkbox" id="java">
+    <label>Java</label>
+    <input type="checkbox" id="JavaScript">
+    <label>JavaScript</label>
+    <input type="checkbox" id="Python">
+    <label>Python</label><br><br>
+    <label> Password:</label>
+    <input type="password">
+    <label> Confirm Password:</label>
+    <input type="password"><br><br>
+    <button>submit</button>
+    <button> Reset</button>
+    </form>
+</body>
+</html>

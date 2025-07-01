@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="loginpagecolor.css">
+</head>
+<body>
+
+  <button id="loginBtn" onlogin="handleLogin(event)">Login</button>
+
+  <div id="loginForm" style="display: none;">
+    <h2>Login</h2>
+    <form id="loginForm" >
+      <label for="Username"> Username:  </label>
+      <input type="text" placeholder="Username" required><br><br>
+      <label for="password"> password:  </label>
+      <input type="password" placeholder="Password" required><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    loginBtn.addEventListener('click', () => {
+      loginBtn.style.display = 'none';      
+      loginContainer.style.display = 'block'; 
+    });
+    document.getElementById('loginBtn').addEventListener('click', function() {
+      document.getElementById('loginForm').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
